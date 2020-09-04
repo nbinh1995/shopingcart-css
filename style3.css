@@ -201,9 +201,11 @@ img {
 @keyframes two {
   from {
     width: 0px;
+    transform: translateX(-200%);
   }
   to {
     width: calc(100% - 20px);
+    transform: translateX(0);
   }
 }
 @keyframes three {
@@ -461,6 +463,10 @@ img {
 
 .menu-drop-down {
   position: relative;
+  cursor: pointer;
+}
+.menu-drop-down label {
+  cursor: pointer;
 }
 
 .dropdown-mini-cart {
